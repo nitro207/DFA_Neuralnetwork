@@ -12,6 +12,9 @@ file = open("test_DFA_data.csv", "a")
 wordCount = int(input("how many words would you like to generate: "))
 
 #creates correct words
+#V this one is used to make sure it recognizes the lowest level accepted
+file.write("b,1\n")
+
 for i in range(wordCount):
     curentWord = ""
     randnum = np.random.randint(456)
@@ -64,3 +67,5 @@ for i in range(wordCount):
 
 
 file.close()
+
+print("File is done creating")

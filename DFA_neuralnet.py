@@ -68,6 +68,8 @@ def predict_language_membership(text):
 
 option = input("Would you like to test a word (Y or N): ")
 
+
+
 while option == 'y' or option == 'Y':
     print(predict_language_membership(input("What string would you like to test: ")))
     option = input("Would you like to test another word (Y or N): ")
